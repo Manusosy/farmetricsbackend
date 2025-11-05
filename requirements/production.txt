@@ -1,0 +1,12 @@
+-r base.txt
+
+# Production WSGI server
+gunicorn>=21.2.0
+gevent>=23.9.1
+
+# Static files
+whitenoise>=6.6.0
+
+# Database connection pooling (binary version for Render)
+# Using psycopg2-binary from base.txt
+
