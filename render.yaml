@@ -4,7 +4,6 @@
     name: farmetrics-db
     plan: starter
     region: oregon
-    ipAllowList: []
 
   # Redis for Cache and Celery
   - type: redis
@@ -12,6 +11,7 @@
     plan: starter
     region: oregon
     maxmemoryPolicy: allkeys-lru
+    ipAllowList: []
 
   # Django Web Service
   - type: web
